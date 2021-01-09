@@ -18,7 +18,7 @@ conda activate landmarkdetection
 ```
 pip install torch==1.6.0 torchvision==0.7.0
 ```
-3. **Download HRNets at <https://github.com/HRNet/HRNet-Facial-Landmark-Detection>  **
+3. **Download HRNets at <https://github.com/HRNet/HRNet-Facial-Landmark-Detection>**  
 Or
 ```
 git clone https://github.com/HRNet/HRNet-Facial-Landmark-Detection.git
