@@ -1,4 +1,5 @@
 # Facial-landmark-detection
+
 ## Introduction
 
 ## Environment
@@ -27,3 +28,4 @@ git clone https://github.com/HRNet/HRNet-Facial-Landmark-Detection.git
 pip install -r requirements.txt
 ```
 ## Data
+1. You need to download 300-W data set[part1](https://ibug.doc.ic.ac.uk/download/annotations/300w.zip.001)[part2](https://ibug.doc.ic.ac.uk/download/annotations/300w.zip.002) from 
