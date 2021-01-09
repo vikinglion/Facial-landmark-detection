@@ -1,7 +1,7 @@
 # Facial-landmark-detection
 
 ## Introduction
-
+This is a tutorial for facial landmark detection, the training model is **HRNet** and the data set is **300W**.
 ## Environment
 * Windows10
 * CUDA 10.2
