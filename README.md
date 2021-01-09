@@ -28,4 +28,32 @@ git clone https://github.com/HRNet/HRNet-Facial-Landmark-Detection.git
 pip install -r requirements.txt
 ```
 ## Data
-1. You need to download 300-W data set from <https://ibug.doc.ic.ac.uk/resources/300-W/>
+1. You need to download 300-W image set and annotations from <https://ibug.doc.ic.ac.uk/resources/300-W/>
+2. Create folder ```data``` in ``` HRNet-Facial-Landmark-Detection-master```  
+Directory shold like this:
+```
+-- data
+   |-- 300w
+       |-- images
+       |   |-- afw
+       |   |-- helen
+       |   |-- ibug
+       |   |-- lfpw
+       |   ...
+       |-- face_landmarks_300w_test.csv
+       |-- face_landmarks_300w_train.csv
+       |-- face_landmarks_300w_valid.csv
+       |-- face_landmarks_300w_valid_challenge.csv
+       |-- face_landmarks_300w_valid_common.csv
+```
+## Train
+Start training after adjusting the parameters
+```
+python tools/train.py --cfg experiments/300w/face_alignment_300w_hrnet_w18.yaml
+```
+## Training model and test results
+1. The training model will be saved in ```output\300W\face_alignment_300w_hrnet_w18```
+2. Test the optimal model and output the result
+```
+python tools/test.py --cfg experiments/300w/face_alignment_300w_hrnet_w18.yaml --model-file output\300W\face_alignment_300w_hrnet_w18\final_state.pth
+```
