@@ -56,7 +56,20 @@ python tools/train.py --cfg experiments/300w/face_alignment_300w_hrnet_w18.yaml
 ```
 ## Training model and test results
 1. **The training model will be saved in ```output\300W\face_alignment_300w_hrnet_w18```**
-2. **Test the optimal model and output the result**
+2. **Test the optimal model and output the result(default NME Full)**
 ```
 python tools/test.py --cfg experiments/300w/face_alignment_300w_hrnet_w18.yaml --model-file output\300W\face_alignment_300w_hrnet_w18\final_state.pth
 ```
+3. **Modify test set in ```face_alignment_300w_hrnet_w18.yaml```**  
+Replace ```face_landmarks_300w_valid.csv``` to ```face_landmarks_300w_valid_common.csv```
+```
+DATASET:
+  DATASET: 300W
+  ROOT: './data/300w/images'
+  TRAINSET: './data/300w/face_landmarks_300w_train.csv'
+  TESTSET: './data/300w/face_landmarks_300w_valid_common.csv'
+  FLIP: true
+  SCALE_FACTOR: 0.25
+  ROT_FACTOR: 30
+``` 
+4. **Do Step 2 again**
