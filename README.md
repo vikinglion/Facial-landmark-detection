@@ -39,6 +39,9 @@ Directory shold like this:
        |   |-- helen
        |   |-- ibug
        |   |-- lfpw
+       |   |-- Test
+       |   |   |-- 01_Indoor
+       |   |   |-- 02_Outdoor
        |   ...
        |-- face_landmarks_300w_test.csv
        |-- face_landmarks_300w_train.csv
