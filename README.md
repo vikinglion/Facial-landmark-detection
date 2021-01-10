@@ -60,7 +60,7 @@ python tools/train.py --cfg experiments/300w/face_alignment_300w_hrnet_w18.yaml
 ```
 python tools/test.py --cfg experiments/300w/face_alignment_300w_hrnet_w18.yaml --model-file output\300W\face_alignment_300w_hrnet_w18\final_state.pth
 ```
-3. **Modify test set in ```face_alignment_300w_hrnet_w18.yaml```**  
+3. **Modify test set in ```face_alignment_300w_hrnet_w18.yaml```, test NME Common**  
 Replace ```face_landmarks_300w_valid.csv``` to ```face_landmarks_300w_valid_common.csv```
 ```
 DATASET:
